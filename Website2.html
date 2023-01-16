@@ -1,0 +1,68 @@
+<!-- LIST AND TABLES -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div id="first" class="yellow text-dark" data-game="mario" data-player="harry">
+        i am the first container
+    </div>
+    <div>
+        <ul type="square">    <!--better not use "type" as it may conflict with CSS -->
+            <li>badminton</li>
+            <li>basketball</li>
+            <li>cricket</li>
+        </ul>
+        <ol>
+            <li>Maths</li>
+            <li>Physics</li>
+            <li>Chemistry</li>
+        </ol>
+    </div>
+    <div>
+        <table>
+           <marquee behavior="scroll" direction="right" scrollamount="20"> Welcome to HTML</marquee>
+
+           <caption>Student record</caption>
+            <thead>                     <!--Use of thead and tbody makes table SEO-->
+            <tr>
+                <th>Name</th>
+                <th>course</th>     <!--table header-->
+                <th>roll no</th>
+                <th>Semester</th>
+                <th colspan="2">Marks</th>   <!--it makes coulumn heading expand over two columns-->
+            </tr>
+            </thead>
+            <tbody>
+            <tr>  <!--table row-->
+                <td>Ashutosh Goswami</td>
+                <td>ECE</td>
+                <td>21104027</td>
+                <td>2nd</td>
+                <td>47</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>Viklesh kumar</td>   <!--table discription-->
+                <td>ECE</td>
+                <td>21104078</td>
+                <td>2nd</td>
+                <td>48</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>Rohan sharma</td>
+                <td>MEC</td>
+                <td>21104021</td>
+                <td>2nd</td>
+                <td>49</td>
+                <td>49</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script2.js"></script>    
+</body>
+</html>
